@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "48667728-dff6-48d1-965e-585d37048eaf",
+		"name": "OpenWeatherMap-Api_Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23404772"
+	},
+	"item": [
+		{
+			"name": "OpenWeather-Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://samples.openweathermap.org/data/2.5/weather?q=uk&appid=b6907d289e10d714a6e88b30761fae22",
+					"protocol": "https",
+					"host": [
+						"samples",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "uk"
+						},
+						{
+							"key": "appid",
+							"value": "b6907d289e10d714a6e88b30761fae22"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Base_Url",
+			"value": "https://samples.openweathermap.org/data/2.5/weather",
+			"type": "string"
+		}
+	]
+}
